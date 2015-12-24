@@ -1,0 +1,7 @@
+JDBC2Kafka.properties
+target/
+*.bbprojectsettings
+*.iml
+.idea
+LastOffsetWritten.save
+jdbc2kafka.iml

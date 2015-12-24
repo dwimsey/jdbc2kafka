@@ -1,0 +1,19 @@
+#ConnectionString=jdbc:mysql://localhost/stuff?user=myUser&password=myPass
+#DriverClass=com.mysql.jdbc.Driver
+
+#MaxQueuedRecords=100000
+#LoopSleepTimeMinMS=300000
+#LoopSleepTimeMaxMS=900000
+#MinQueueSpaceRequiredForPoll=250000
+#MinRecordCountToPoll=1
+#MinErrorSleepRetryTimeMS=5000000
+#MaxErrorSleepRetryTimeMS=5000
+
+#metadata.broker.list=localhost:9092
+#serializer.class=kafka.serializer.StringEncoder
+#partitioner.class=us.wimsey.jdbc2kafka.RoundRobinPartitioner
+#request.required.acks=1
+
+#KafkaTopic=newOutputTopic
+#JDBCPollForItemsQuery=SELECT * FROM log_table WHERE id > ? ORDER BY id ASC LIMIT ?
+#JDBCNextIdQuery=SELECT id FROM log_table ORDER BY id DESC LIMIT 1
